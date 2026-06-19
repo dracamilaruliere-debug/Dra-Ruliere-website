@@ -703,6 +703,20 @@ img {
   }
 }
 
+.site-footer {
+  margin-top: 64px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.footer-bar {
+  max-width: 100%;
+  height: auto;
+  opacity: 0.95;
+}
+
 @media (prefers-reduced-motion: reduce) {
   html {
     scroll-behavior: auto;

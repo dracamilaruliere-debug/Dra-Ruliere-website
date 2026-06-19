@@ -712,9 +712,9 @@ img {
 }
 
 .footer-bar {
+  max-width: 900px;
   width: 100%;
-  max-height: 120px;
-  object-fit: cover;
+  height: auto;
   border-radius: 24px;
   opacity: 0.95;
 }

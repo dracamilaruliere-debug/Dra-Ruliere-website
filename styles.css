@@ -483,6 +483,11 @@ img {
   filter: grayscale(1) brightness(1.55) contrast(1.02);
 }
 
+.area-image-tdah {
+  height: 150px;
+  max-width: 90%;
+}
+
 .care-image {
   display: block;
   width: auto;

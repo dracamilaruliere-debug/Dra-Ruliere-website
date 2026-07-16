@@ -78,7 +78,7 @@ img {
   margin-bottom: 18px;
   border: 1px solid var(--line);
   border-radius: 24px;
-  background: linear-gradient(155deg, rgba(127, 142, 126, 0.95), rgba(111, 121, 111, 0.95));
+  background: #ffffff;
   backdrop-filter: blur(18px);
   box-shadow: 0 18px 40px rgba(90, 82, 69, 0.08);
 }
@@ -104,7 +104,7 @@ img {
   font-family: "Iowan Old Style", "Palatino Linotype", "Book Antiqua", Georgia, serif;
   font-size: 0.98rem;
   letter-spacing: 0.02em;
-  color: #fbf8f2;
+  color: #6f796f;
 }
 
 .nav-toggle {
@@ -115,16 +115,16 @@ img {
   width: 44px;
   height: 44px;
   padding: 0;
-  border: 1px solid rgba(255, 255, 255, 0.2);
+  border: 1px solid rgba(111, 121, 111, 0.2);
   border-radius: 999px;
-  background: rgba(255, 255, 255, 0.12);
+  background: rgba(111, 121, 111, 0.08);
 }
 
 .nav-toggle span {
   width: 16px;
   height: 1.5px;
   margin: 0 auto;
-  background: #fbf8f2;
+  background: #6f796f;
   transition: transform 180ms ease, opacity 180ms ease;
 }
 
@@ -287,7 +287,7 @@ img {
   position: relative;
   min-height: 0;
   height: auto;
-  aspect-ratio: 853 / 1280;
+  aspect-ratio: 4 / 5;
   align-self: start;
   background:
     linear-gradient(180deg, rgba(255, 255, 255, 0.12), rgba(0, 0, 0, 0.12)),
@@ -587,33 +587,45 @@ img {
 
   .site-nav a {
     padding: 10px 14px;
-    color: rgba(251, 248, 242, 0.9);
+    color: #6f796f;
   }
 
   .site-nav a:hover,
   .site-nav a:focus-visible {
-    background: rgba(255, 255, 255, 0.12);
-    color: #ffffff;
+    background: rgba(111, 121, 111, 0.08);
+    color: #6f796f;
   }
 
   .nav-cta {
-    color: #ffffff !important;
-    background: rgba(255, 255, 255, 0.2);
+    color: #6f796f !important;
+    background: rgba(111, 121, 111, 0.12);
   }
 
   .nav-cta:hover {
-    background: rgba(255, 255, 255, 0.3) !important;
+    background: rgba(111, 121, 111, 0.2) !important;
   }
 
   .section-frame {
-    padding: 34px;
-    margin-bottom: 22px;
+    padding: 24px 30px;
+    margin-bottom: 14px;
   }
 
   .hero {
-    grid-template-columns: minmax(0, 1fr) minmax(480px, 1.08fr);
-    align-items: stretch;
-    min-height: 78vh;
+    grid-template-columns: 1.3fr minmax(300px, 0.7fr);
+    align-items: center;
+    min-height: 0;
+  }
+
+  .hero h1 {
+    font-size: 2.5rem;
+  }
+
+  .hero-text {
+    font-size: 0.95rem;
+  }
+
+  .hero-actions {
+    margin-top: 16px;
   }
 
   .hero-copy {
@@ -633,7 +645,7 @@ img {
     min-height: 0;
     height: auto;
     width: 100%;
-    max-width: 440px;
+    max-width: 300px;
   }
 
   .about-grid {
@@ -643,10 +655,28 @@ img {
   }
 
   .about-visual {
-    max-width: 320px;
+    max-width: 300px;
     height: auto;
     margin: 0 auto;
     padding: 0;
+  }
+
+  .about-copy {
+    padding: 16px;
+    gap: 12px;
+  }
+
+  .about-copy p {
+    font-size: 0.95rem;
+  }
+
+  .section-heading {
+    margin-bottom: 16px;
+  }
+
+  .section-heading h2,
+  .contact-copy h2 {
+    font-size: 2.2rem;
   }
 
   .areas-grid,
@@ -654,19 +684,63 @@ img {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
+  .area-card {
+    padding: 14px 18px;
+  }
+
+  .area-image {
+    height: 110px;
+  }
+
+  .area-image-tdah {
+    height: 140px;
+  }
+
+  .area-card h3 {
+    font-size: 1.15rem;
+    margin-bottom: 6px;
+  }
+
   .contact {
-    grid-template-columns: minmax(0, 0.9fr) minmax(380px, 1.1fr);
+    grid-template-columns: minmax(0, 0.9fr) minmax(320px, 1.1fr);
     align-items: start;
+    gap: 32px;
+  }
+
+  .contact-copy p {
+    font-size: 0.95rem;
   }
 
   .contact-panel {
-    padding: 20px;
+    gap: 8px;
+    padding: 12px;
+  }
+
+  .contact-item {
+    grid-template-columns: 38px 1fr;
+    gap: 10px;
+    padding: 10px 12px;
+  }
+
+  .contact-icon {
+    width: 38px;
+    height: 38px;
+    font-size: 0.95rem;
+  }
+
+  .contact-item strong {
+    font-size: 1.1rem;
+    margin-bottom: 2px;
+  }
+
+  .contact-item span {
+    font-size: 0.9rem;
   }
 }
 
 @media (min-width: 1100px) {
   .section-frame {
-    padding: 42px;
+    padding: 26px 36px;
   }
 
   .areas-grid {
@@ -678,14 +752,14 @@ img {
   }
 
   .contact-item {
-    grid-template-columns: 54px 1fr;
-    padding: 18px;
+    grid-template-columns: 42px 1fr;
+    padding: 12px;
   }
 
   .contact-icon {
-    width: 54px;
-    height: 54px;
-    font-size: 1.22rem;
+    width: 42px;
+    height: 42px;
+    font-size: 1.05rem;
   }
 }
 

@@ -777,3 +777,11 @@ img {
     transition: none !important;
   }
 }
+.header-top, .navbar {
+    background-color: var(--cor-fundo-sobre-mim);
+    color: #ffffff;
+}
+
+.header-top a, .header-top h1, .header-top h2 {
+    color: #ffffff;
+}
